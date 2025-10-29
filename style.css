@@ -1,4 +1,4 @@
-body {
+ body {
       font-family: "Poppins", sans-serif;
       background-color: #f7f9fc;
       color: #333;
@@ -29,4 +29,26 @@ body {
     a:hover {
       text-decoration: underline;
     }
-  
+    section {
+  background: white;
+  padding: 25px;
+  width: 70%;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+h2 {
+  color: #0066cc;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+section:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease;
+}
