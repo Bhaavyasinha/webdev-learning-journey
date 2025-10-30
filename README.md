@@ -1,6 +1,6 @@
 # Web Development Learning Journey
 
-Hi, I’m Bhaavya 👋  
+Hi, I’m Bhaavya   
 This repository contains all the small projects and practice files from my journey of learning web development.  
 I’m starting from HTML and CSS and slowly working my way toward building my personal portfolio. 
 
