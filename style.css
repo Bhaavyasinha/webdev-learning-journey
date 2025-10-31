@@ -1,57 +1,4 @@
-body {
-      font-family: "Poppins", sans-serif;
-      background-color: #f7f9fc;
-      color: #333;
-      text-align: center;
-      margin: 50px;
-    }
-    .card {
-      background: white;
-      padding: 30px;
-      width: 350px;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      margin: auto;
-    }
-    img {
-      width: 250px;
-      border-radius: 10px;
-      margin-top: 10px;
-    }
-    h1 {
-      color: #0066cc;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    section {
-  background: white;
-  padding: 25px;
-  width: 70%;
-  margin: 20px auto;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  text-align: left;
-}
-
-h2 {
-  color: #0066cc;
-  margin-bottom: 10px;
-}
-
-ul {
-  list-style-type: square;
-  padding-left: 20px;
-}
-section:hover {
-  transform: scale(1.02);
-  transition: 0.3s ease;
-}
+/* General Page Styling */
 body {
   font-family: "Lora", serif;
   background-color: #faf7ff; /* soft lavender background */
@@ -61,13 +8,80 @@ body {
   padding: 0;
 }
 
+body {
+  font-family: "Lora", serif;
+  background-color: #faf7ff; /* soft lavender background */
+  color: #2b2b2b;
+  margin: 0;
+  padding: 0;
+
+  /* Flexbox magic ✨ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #a38bff;  /* soft purple background */
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #f0f0f0;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* Card Styling */
 .card {
   background: #ffffff;
   padding: 30px;
   width: 360px;
   border-radius: 18px;
   box-shadow: 0 6px 14px rgba(123, 44, 191, 0.15);
-  margin: 60px auto;
+  margin: 120px auto 60px; /* added top space for fixed navbar */
   border-top: 6px solid #7b2cbf; /* purple accent */
 }
 
@@ -82,6 +96,7 @@ h1 {
   color: #7b2cbf;
 }
 
+/* Links */
 a {
   color: #b983ff;
   text-decoration: none;
@@ -121,27 +136,10 @@ a:hover {
   font-size: 1rem;
   margin: 8px 0;
 }
-.btn {
-  background-color: #7b2cbf; /* purple base */
-  color: #fff;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  display: inline-block;
-  box-shadow: 0 4px 10px rgba(123, 44, 191, 0.2);
-}
 
-button:hover {
-  background-color: #b983ff;
-  color: #2b2b2b;
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(123, 44, 191, 0.5);
-}
+/* Button Styling */
 .linkedin-btn {
-  background-color: #a36bf0;   /* soft purple */
+  background-color: #a36bf0;  
   color: white;
   padding: 10px 25px;
   border-radius: 30px;
@@ -153,8 +151,30 @@ button:hover {
 }
 
 .linkedin-btn:hover {
-  background-color: #7b3fe0;   /* darker purple */
+  background-color: #7b3fe0;   
   transform: scale(1.07);
   box-shadow: 0 4px 12px rgba(123, 63, 224, 0.3);
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  img {
+    width: 180px;
+  }
+
+  .section {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(123, 44, 191, 0.2);
+  transition: all 0.3s ease;
 }
 
