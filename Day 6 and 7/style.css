@@ -1,0 +1,236 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: "Lora", serif;
+  background: linear-gradient(to bottom right, #faf7ff, #f9dcc4);
+  color: #2b2b2b;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
+.navbar {
+  background-color: #a38bff;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 18px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  position: relative;
+  padding: 4px 0;
+  transition: color 0.25s ease;
+  cursor: pointer;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -6px;
+  background-color: rgba(255,255,255,0.95);
+  transition: width 0.25s ease;
+}
+
+.navbar a:hover {
+  color: #f0f0f0;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+
+@keyframes navFade {
+  from { transform: translateY(-6px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+.navbar li { animation: navFade 0.35s ease forwards; }
+
+
+.card {
+  background: #ffffff;
+  padding: 30px;
+  width: 360px;
+  border-radius: 18px;
+  box-shadow: 0 6px 14px rgba(123, 44, 191, 0.15);
+  margin: 120px auto 60px;
+  border-top: 6px solid #7b2cbf;
+  transition: all 0.5s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover {
+  transform: scale(1.5);
+  width: 50vw; 
+  height: auto;
+  box-shadow: 0 40px 80px rgba(123, 44, 191, 0.3);
+  z-index: 10;
+}
+
+
+
+@keyframes cardIn {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.card { animation: cardIn 0.45s ease both; }
+
+
+img {
+  width: 250px;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 3px solid #b983ff;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+
+img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(123,44,191,0.12);
+}
+
+
+h1 {
+  color: #7b2cbf;
+  margin: 12px 0;
+}
+
+
+a {
+  color: #7b2cbf;
+  text-decoration: none;
+  font-weight: 600;
+}
+a:hover { text-decoration: underline; }
+
+
+.section {
+  margin: 30px auto;
+  padding: 24px;
+  width: 80%;
+  max-width: 720px;
+  border-radius: 18px;
+  box-shadow: 0 6px 12px rgba(123, 44, 191, 0.08);
+  background-color: #ffffff;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(8px);
+  animation: sectionIn 0.45s ease forwards;
+}
+
+
+@keyframes sectionIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+.section:nth-of-type(1) { animation-delay: 0.1s; }
+.section:nth-of-type(2) { animation-delay: 0.18s; }
+.section:nth-of-type(3) { animation-delay: 0.26s; }
+
+
+.section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(123,44,191,0.12);
+}
+
+
+.about { background-color: #f8f4ff; }
+.skills { background-color: #fff8f4; }
+.contact { background-color: #f4faff; }
+
+
+.section h2 {
+  color: #7b2cbf;
+  border-bottom: 2px solid #b983ff;
+  padding-bottom: 6px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+
+.section ul { list-style: none; padding-left: 0; margin: 8px 0 0 0; }
+.section li { margin: 8px 0; font-size: 1rem; }
+
+
+.linkedin-btn {
+  background-color: #a36bf0;
+  color: white;
+  padding: 10px 26px;
+  border-radius: 28px;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 16px;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, background-color 0.2s ease;
+}
+
+.linkedin-btn:hover {
+  background-color: #7b3fe0;
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 10px 26px rgba(123,63,224,0.18);
+}
+
+
+.contact-link {
+  color: #7b2cbf;
+  font-weight: 600;
+}
+
+
+footer {
+  background-color: transparent;
+  color: #2b2b2b;
+  text-align: center;
+  padding: 26px 10px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+
+
+@media (max-width: 900px) {
+  .card { width: 88%; padding: 22px; margin-top: 100px; }
+  img { width: 200px; }
+  .navbar li { margin: 0 12px; }
+}
+
+@media (max-width: 600px) {
+  .card { width: 94%; padding: 18px; margin-top: 100px; }
+  img { width: 160px; }
+  .section { width: 92%; padding: 14px; }
+  .navbar a { font-size: 15px; }
+}
