@@ -1,0 +1,177 @@
+body {
+  font-family: "Lora", serif;
+  background-color: #faf7ff; 
+  color: #2b2b2b;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lora", serif;
+  background-color: #faf7ff; 
+  color: #2b2b2b;
+  margin: 0;
+  padding: 0;
+
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.navbar {
+  background-color: #a38bff;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #f0f0f0;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+
+.card {
+  background: #ffffff;
+  padding: 30px;
+  width: 360px;
+  border-radius: 18px;
+  box-shadow: 0 6px 14px rgba(123, 44, 191, 0.15);
+  margin: 120px auto 60px; 
+  border-top: 6px solid #7b2cbf; 
+}
+
+img {
+  width: 250px;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 3px solid #b983ff;
+}
+
+h1 {
+  color: #7b2cbf;
+}
+
+
+a {
+  color: #b983ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #7b2cbf;
+  text-decoration: underline;
+}
+
+
+.section {
+  margin: 40px auto;
+  padding: 25px;
+  width: 80%;
+  max-width: 700px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(123, 44, 191, 0.1);
+}
+
+.section h2 {
+  color: #7b2cbf;
+  border-bottom: 2px solid #b983ff;
+  padding-bottom: 5px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section li {
+  font-size: 1rem;
+  margin: 8px 0;
+}
+
+.linkedin-btn {
+  background-color: #a36bf0;  
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.linkedin-btn:hover {
+  background-color: #7b3fe0;   
+  transform: scale(1.07);
+  box-shadow: 0 4px 12px rgba(123, 63, 224, 0.3);
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  img {
+    width: 180px;
+  }
+
+  .section {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(123, 44, 191, 0.2);
+  transition: all 0.3s ease;
+}
