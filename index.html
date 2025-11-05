@@ -3,66 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bhaavya | Portfolio</title>
-  <link rel="stylesheet" href="style.css" /> 
+  <title>Bhaavya Sinha | Portfolio</title>
+  <link rel="stylesheet" href="home.css" />
 </head>
 <body>
+  <div class="hero">
+    <h1>Hei!, I'm <span class="highlight">Bhaavya Sinha</span></h1>
+    <h2>a Bioinformatics student exploring<br> web Development </h2>
+    <p class="subtitle">Day 10 :)</p>
 
-  <nav class="navbar">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <section id="home" class="card">
-    <img src="pic.jpg" alt="Profile Picture" />
-    <h1>Hei! I’m Bhaavya</h1>
-    <p>I’m a 2nd-year Bioinformatics student exploring Web Development.</p>
-    <p><strong>Day 8 of WebDev Journey</strong></p>
-    <a href="https://www.linkedin.com/in/bhaavyasinha/" target="_blank" class="linkedin-btn">Connect with me!</a>
-
-    <div class="extra-content">
-      <p>Not much here, just me trying my best :)</p>
+    <div class="buttons">
+      <a href="#" class="btn">→ About me</a>
+      <a href="#" class="btn">→ Connect with me</a>
     </div>
-  </section>
+  </div>
 
-  <section id="about" class="section about">
-    <h2>About Me</h2>
-    <p>Hei! I’m Bhaavya, learning to build cool things on the internet,<br>
-       one semi-broken line of code at a time. :)</p>
-  </section>
-
-  <section id="skills" class="section skills">
-    <h2>Skills in Progress</h2>
-    <ul>
-      <li>HTML: Works... mostly</li>
-      <li>CSS: Layouts and styling getting better!</li>
-      <li>GitHub: Figuring out uploads</li>
-      <li>JavaScript: Little...</li>
-    </ul>
-  </section>
-
-  
-  <section id="contact" class="section contact">
-    <h2>Contact</h2>
-    <p>Let’s connect —  
-       <a href="mailto:bhaavyasinha00@gmail.com" class="contact-link">bhaavyasinha00@gmail.com</a>
-    </p>
-  </section>
-
-  <footer>
-    <p>Made by Bhaavya — Day 8</p>
-  </footer>
-
-  <script>
-    const card = document.querySelector('.card');
-    card.addEventListener('click', () => {
-      card.classList.toggle('expanded');
-    });
-  </script>
-
+  <script src="home.js"></script>
 </body>
 </html>
