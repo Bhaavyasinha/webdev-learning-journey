@@ -8,7 +8,7 @@ function createBubble() {
   bubble.style.height = `${size}px`;
   bubble.style.left = `${Math.random() * 100}%`;
   bubble.style.animationDuration = `${6 + Math.random() * 4}s`;
-  document.body.appendChild(bubble);
+  document.body.appendChild(bubble); 
 
   bubble.addEventListener("animationend", () => {
     bubble.remove();
