@@ -73,7 +73,6 @@ h2 {
   background: linear-gradient(90deg, #6d28d9, #db2777);
 }
 
-/* animations */
 @keyframes gradientShift {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -83,4 +82,28 @@ h2 {
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-12px); }
+}
+
+.intro {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #120101;
+  text-align: center;
+  margin-top: 20vh;
+  letter-spacing: 1px;
+}
+
+#typed {
+  color: #6b21a8;
+}
+
+.typed-cursor {
+  font-weight: 400;
+  color: #070212;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
 }
