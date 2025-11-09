@@ -5,7 +5,7 @@ body {
   animation: gradientShift 12s ease infinite;
   color: #2b2b2b;
   margin: 0;
-  display: flex;
+  display: flex; 
   justify-content: center;
   align-items: center;
   height: 100vh;
