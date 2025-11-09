@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect with Me | Bhaavya</title>
+  <link rel="stylesheet" href="connect.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Connect</a></li>
+    </ul>
+  </nav>
+
+  <div class="contact-card">
+    <h1>Let’s Connect </h1>
+    <p>I’d love to hear from you. Whether it’s about web development, bioinformatics, or piano, just drop a message below!</p>
+
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Write your message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p class="socials">Or reach me directly:  
+      <a href="mailto:bhaavya@example.com">Email</a> · 
+      <a href="https://www.linkedin.com/in/bhaavyasinha/" target="_blank">LinkedIn</a>
+    </p>
+  </div>
+
+  <script src="connect.js"></script>
+</body>
+</html>
