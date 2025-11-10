@@ -107,3 +107,38 @@ h2 {
   0%, 50%, 100% { opacity: 1; }
   25%, 75% { opacity: 0; }
 }
+
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 10000;
+  transition: transform 0.15s ease, background-color 0.25s ease, opacity 0.25s ease;
+}
+
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #b183ff; 
+  mix-blend-mode: difference;
+}
+
+.cursor-outline {
+  width: 36px;
+  height: 36px;
+  background: rgba(177, 131, 255, 0.25);
+  box-shadow: 0 0 25px rgba(177, 131, 255, 0.5);
+  backdrop-filter: blur(3px);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.hovered .cursor-outline {
+  transform: scale(1.7);
+  background: rgba(177, 131, 255, 0.45);
+  box-shadow: 0 0 40px rgba(177, 131, 255, 0.6);
+}
+
