@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     hero.style.opacity = "1";
   }, 400);
-});
+}); 
 
 const cursorDot = document.createElement("div");
 cursorDot.classList.add("cursor-dot");
