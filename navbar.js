@@ -166,7 +166,6 @@ class FairyTerminal {
     }
 }
 
-// Initialize when page loads
 document.addEventListener('DOMContentLoaded', () => {
     new FairyTerminal();
 });
