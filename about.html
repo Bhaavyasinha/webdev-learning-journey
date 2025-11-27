@@ -6,14 +6,21 @@
   <title>About Me - Bhaavya</title>
   <link rel="stylesheet" href="about.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="navbar.css">      
+
+
 </head>
 <body>
+
+
+
   <audio id="bg-audio" src="piano.mp4" autoplay loop></audio>
   <div class="about-container">
     <div class="left">
       <h1>Hei!, I'm <span>Bhaavya Sinha</span></h1>
       <h3>Bioinformatics Student | Pianist | Curious Mind</h3>
-      <p class="intro">You can call me a little bubbly... so here are some bubbles! <br>You can pop them too. Just hit the space bar :)
+      <p class="intro">You can call me a little bubbly... so here are some bubbles! <br>You can pop them too. Just hit space bar :)
 <br> P.S. Hope you can hear the piano, it's from one of my practice sessions, so not perfect :)</p>
     </div>
 
@@ -30,9 +37,72 @@
         just like notes in a melody. 
       </p>
     </div>
-      <a href="home.html" class="btn">Home</a>
   </div>
 
-  <script src="about.js" defer></script>
+  <script src="about.js"></script>
+
+  <div id="navbar-container"></div>
+
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('navbar-container').innerHTML = html;
+            });
+    </script>
+
+    <nav class="fairy-terminal" id="fairyNav">
+        <div class="fairy-header">
+            <div class="fairy-controls">
+                <span class="f-control blossom"></span>
+                <span class="f-control leaf"></span>
+                <span class="f-control dewdrop"></span>
+            </div>
+            <div class="fairy-title">// TODO: add funny title...</div>
+        </div>
+
+        <div class="enchanted-display">
+            <div class="sparkle-dust"></div>
+            <div class="fairy-options">
+
+                <div class="fairy-option" data-target="home.html">
+                    <div class="fairy-glow"></div>
+                    <span class="fairy-text"> DNA Me...</span>
+                    <span class="fairy-desc">still figuring out</span>
+                </div>
+
+                <div class="fairy-option" data-target="projects.html">
+                    <div class="fairy-glow"></div>
+                    <span class="fairy-text">Baby Projects...</span>
+                    <span class="fairy-desc">check back later pls</span>
+                </div>
+
+                <div class="fairy-option" data-target="about.html">
+                    <div class="fairy-glow"></div>
+                    <span class="fairy-text">About Me...</span>
+                    <span class="fairy-desc"> The Human :) </span>
+                </div>
+
+                <div class="fairy-option" data-target="connect.html">
+                    <div class="fairy-glow"></div>
+                    <span class="fairy-text">Duet Time...</span>
+                    <span class="fairy-desc">let's chat</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="fairy-input">
+            <span class="fairy-prompt">🪄 choose your path:</span>
+            <input type="text" id="fairyInput" placeholder="type option number or 'help'">
+        </div>
+    </nav>
+
+    <button class="fairy-activator" id="fairyBtn">
+        <div class="fairy-sparkle"></div>
+        <span>If you are lost like me :)</span>
+    </button>
+
+    <script src="navbar.js"></script>
+
 </body>
 </html>
