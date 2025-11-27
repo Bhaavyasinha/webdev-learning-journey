@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhaavya Sinha | Portfolio</title>
+  <link rel="stylesheet" href="home.css" />
+
+</head>
+<body>
+
+  <div class="hero">
+    <h1 class="intro">
+  Hei!... I'm <span id="typed"></span>
+</h1>
+
+    <h2>a Bioinformatics student exploring<br>Web Development</h2>
+    <p class="subtitle"> :) </p>
+
+    <div class="buttons">
+      <a href="about.html" class="btn">→ About Me</a>
+      <a href="connect.html" class="btn">→ Connect with me</a>
+    </div>
+
+  </div>
+
+  <script src="home.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    new Typed("#typed", {
+      strings: [
+        "Bhaavya Sinha.",
+        "a Web Developer.",
+        "a Bioinformatics Student.",
+        "a pianist."
+      ],
+      typeSpeed: 55,
+      backSpeed: 35,
+      backDelay: 1800,
+      startDelay: 700,
+      fadeOut: true,        
+      fadeOutDelay: 200,
+      loop: true,
+      showCursor: true,
+      cursorChar: "|"
+    });
+  });
+</script>
+
+
+</body>
+</html>
