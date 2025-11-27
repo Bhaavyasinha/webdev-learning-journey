@@ -139,7 +139,7 @@ class FairyTerminal {
 
     showHelp() {
         const helpText = `
- Available Magic Spells 
+          Available 
 
 [1] or "DNA Me"    - Home
 [2] or "Projects"  - Coming soon 
