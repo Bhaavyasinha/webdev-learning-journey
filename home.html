@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bhaavya Sinha | Portfolio</title>
   <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="navbar.css">      
+
 
 </head>
 <body>
@@ -15,7 +17,7 @@
 </h1>
 
     <h2>a Bioinformatics student exploring<br>Web Development</h2>
-    <p class="subtitle"> :) </p>
+    <p class="subtitle"> :)</p>
 
     <div class="buttons">
       <a href="about.html" class="btn">→ About Me</a>
@@ -49,7 +51,59 @@
     });
   });
 </script>
+<nav class="fairy-terminal" id="fairyNav">
+        <div class="fairy-header">
+            <div class="fairy-controls">
+                <span class="f-control blossom"></span>
+                <span class="f-control leaf"></span>
+                <span class="f-control dewdrop"></span>
+            </div>
+            <div class="fairy-title">// TODO: add funny title...</div>
+        </div>
 
+        <div class="enchanted-display">
+            <div class="sparkle-dust"></div>
+            <div class="fairy-options">
 
+                <div class="fairy-option" data-target="home.html">
+                    <div class="fairy-glow"></div>
+                    <span class="fairy-text"> DNA Me...</span>
+                    <span class="fairy-desc">still figuring out</span>
+                </div>
+
+                <div class="fairy-option" data-target="projects.html">
+                    <div class="fairy-glow"></div>
+                    <span class="fairy-text">Baby Projects...</span>
+                    <span class="fairy-desc">check back later pls</span>
+                </div>
+
+                <div class="fairy-option" data-target="about.html">
+                    <div class="fairy-glow"></div>
+                    <span class="fairy-text">About Me...</span>
+                    <span class="fairy-desc"> The Human :) </span>
+                </div>
+
+                <div class="fairy-option" data-target="connect.html">
+                    <div class="fairy-glow"></div>
+                    <span class="fairy-text">Duet Time...</span>
+                    <span class="fairy-desc">let's chat</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="fairy-input">
+            <span class="fairy-prompt">🪄 choose your path:</span>
+            <input type="text" id="fairyInput" placeholder="type option number or 'help'">
+        </div>
+    </nav>
+
+    <button class="fairy-activator" id="fairyBtn">
+        <div class="fairy-sparkle"></div>
+        <span>If you are lost like me :) </span>
+    </button>
+
+    <script src="navbar.js"></script>
+
+ 
 </body>
 </html>
