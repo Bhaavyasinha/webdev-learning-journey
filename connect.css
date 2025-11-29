@@ -17,7 +17,7 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-
+ 
 
 .contact-card {
   background: rgba(255, 255, 255, 0.9);
@@ -58,7 +58,7 @@ button {
   color: white;
   padding: 10px;
   border: none;
-  border-radius: 10px;
+  border-radius: 10px;              
   cursor: pointer;
   font-weight: 600;
   transition: 0.3s;
@@ -66,7 +66,7 @@ button {
 
 button:hover { background-color: #7b3fe0; }
 
-.socials {
+.socials  
   margin-top: 15px;
   font-size: 14px;
 }
