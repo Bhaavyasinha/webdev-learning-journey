@@ -10,7 +10,7 @@ function createBubble() {
   bubble.style.animationDuration = `${6 + Math.random() * 4}s`;
   document.body.appendChild(bubble); 
 
-  bubble.addEventListener("animationend", () => {
+  bubble.addEventListener("animationend", () => {             
     bubble.remove();
     createBubble();
   });
